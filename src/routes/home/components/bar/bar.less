@@ -1,0 +1,56 @@
+@import '../../../../assets/style/variable.less';
+
+.zw {
+  height: 100px;
+}
+
+.home-tab-bar {
+  border-bottom: 1px solid @nomore-bg;
+}
+
+#barWrap {
+  width: 100%;
+  background: @white;
+  z-index: 100;
+  &.set-top {
+    position: fixed;
+    top: 90px;
+    left: 0;
+  }
+  :global {
+    .am-tabs-default-bar-top .am-tabs-default-bar-tab {
+      border: none !important;
+    }
+    .am-tabs {
+      padding-bottom: 0;
+    }
+    .am-tabs-tab-bar-wrap {
+      height: 88px;
+      background: @white;
+    }
+    .am-tabs-default-bar-tab {
+      width: auto !important;
+      font-size: 32px;
+      padding: 0 30px;
+      height: 88px;
+      color: @title-black;
+    }
+    .am-tabs-default-bar-tab-active {
+      color: @main-black;
+      font-weight: 600;
+      z-index: 10;
+    }
+    .am-tabs-default-bar-underline {
+      border: none;
+      bottom: 10px;
+      height: 4px;
+      z-index: 9;
+      border-radius: 6px;
+      background: @main-black;
+      width: 60px !important;
+    }
+    .am-list-body:before {
+      background: transparent !important;
+    }
+  }
+}

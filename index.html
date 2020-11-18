@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- 禁止页面缩放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- 控制状态栏显示样式 -->
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <!-- 删除默认的苹果工具栏和菜单栏 -->
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <!-- UC强制竖屏 -->
+  <!-- <meta name=”screen-orientation” content=”portrait”> -->
+  <!-- UC强制全屏 -->
+  <meta name=”full-screen” content=”yes”>
+  <!-- UC应用模式 -->
+  <meta name=”browsermode” content=”application”>
+  <!-- QQ强制竖屏 -->
+  <!-- <meta name=”x5-orientation” content=”portrait”> -->
+  <!-- QQ强制全屏 -->
+  <meta name=”x5-fullscreen” content=”true”>
+  <!-- QQ应用模式  -->
+  <meta name=”x5-page-mode” content=”app”>
+  <!-- 360开启急速模式 -->
+  <meta name=”renderer” content=”webkit”>
+  <meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+  <meta HTTP-EQUIV="Cache-Control" CONTENT="no-store, must-revalidate">
+  <meta HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 1997 08:21:57 GMT">
+  <meta HTTP-EQUIV="expires" CONTENT="0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="baidu-site-verification" content="UgSAQuZ7HP" />
+  <meta name="description" content="华图在线，过关才是硬道理！" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1247591_p9dqwwwgk4c.css">
+  <script src="./static/m-share.min.js"></script>
+  <script src="<%= htmlWebpackPlugin.options.publicPath %>public/javascript/huatuSensors.js" charset="utf-8"></script>
+  <!-- <script src="//m.v.huatu.com/public/javascript/huatuSensors.js" charset="utf-8"></script> -->
+  <script>
+    if (!window.Promise) {
+      document.writeln(
+        '<script src="https://as.alipayobjects.com/g/component/es6-promise/3.2.2/es6-promise.min.js"' +
+        '>' +
+        '<' +
+        '/' +
+        'script>'
+      )
+    }
+  </script>
+  <script
+    src="//g.alicdn.com/fdilab/lib3rd/viewport-units-buggyfill/0.6.2/??viewport-units-buggyfill.hacks.min.js,viewport-units-buggyfill.min.js"></script>
+  <title>公务员考试_事业单位考试_华图在线手机站</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script>
+    window.onload = function () {
+      window.viewportUnitsBuggyfill.init({
+        hacks: window.viewportUnitsBuggyfillHacks
+      })
+    }
+  </script>
+  <!-- 教育的cnzz账号 -->
+  <div style="display:none">
+    <script type="text/javascript" src="https://s4.cnzz.com/z_stat.php?id=580664&web_id=580664"></script>
+  </div>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?f735d6529dbfd84e0e9d68fea4bb90a4";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+  <!-- ios兼容 移动端禁止页面缩放 -->
+  <script>
+    // 阻止双击放大
+    var lastTouchEnd = 0;
+    document.addEventListener('touchstart', function (event) {
+      if (event.touches.length > 1) {
+        event.preventDefault();
+      }
+    });
+    document.addEventListener('touchend', function (event) {
+      var now = (new Date()).getTime();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+
+    // 阻止双指放大
+    document.addEventListener('gesturestart', function (event) {
+      event.preventDefault();
+    });
+  </script>
+
+  <!-- 页面滚动优化 -->
+  <script>
+    var supportsPassive = false;
+    try {
+      var opts = Object.defineProperty({}, 'passive', {
+        get: function () {
+          supportsPassive = true;
+        }
+      });
+
+      /**
+       * Passive event listeners
+       * passive 阻止浏览器滚动事件时调用 preventDefault，快速生成事件，滚动优化提升页面性能
+       */
+      window.addEventListener('touchstart',
+        null,
+        supportsPassive ? { passive: true } : false);
+    } catch (e) { }
+  </script>
+</body>
+
+</html>

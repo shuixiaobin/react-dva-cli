@@ -1,0 +1,36 @@
+@import '../../assets/style/variable.less';
+
+#homePage {
+  width: 100%;
+  .rmbk {
+    background: @white;
+    white-space: nowrap;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    > img {
+      width: 290px;
+      height: 110px;
+      display: inline-block;
+      margin-right: 22px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &.rmbk::-webkit-scrollbar {
+      width: 0 !important;
+      height: 0 !important;
+    }
+
+    &.rmbk {
+      -ms-overflow-style: none;
+    }
+    &.rmbk {
+      overflow: -moz-scrollbars-none;
+    }
+  }
+  .bottom_zw {
+    height: 120px;
+  }
+}

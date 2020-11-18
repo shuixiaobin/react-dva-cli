@@ -1,0 +1,46 @@
+@import '../../../../assets/style/variable.less';
+
+.carousel {
+  background: @white;
+  padding-top: 4px;
+  .carousel_item {
+    height: 260px !important;
+    > img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+  /* 自定义轮播样式 */
+  :global {
+    .slider-frame {
+      border-radius: 16px !important;
+    }
+    .slider-decorator-0 {
+      width: auto !important;
+      padding: 16px 0 10px 0;
+      position: static !important;
+
+      .am-carousel-wrap-dot,
+      .am-carousel-wrap-dot-active,
+      .am-carousel-wrap-dot > span,
+      .am-carousel-wrap-dot-active > span {
+        width: 10px;
+        height: 10px;
+      }
+      .am-carousel-wrap-dot,
+      .am-carousel-wrap-dot-active {
+        margin: 6px;
+        border-radius: 50%;
+      }
+      .am-carousel-wrap-dot {
+        background: @container-bg;
+      }
+      .am-carousel-wrap-dot-active {
+        background: @carousel-slide;
+      }
+      .am-carousel-wrap-dot > span {
+        margin: 0;
+      }
+    }
+  }
+}
