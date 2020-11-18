@@ -1,6 +1,7 @@
-react脚手架：
+react移动端脚手架：
   react + webpack + dva + antd-mobile
 
+线上使用：m.v.huatu.com
 
 
 
